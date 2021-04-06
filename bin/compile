@@ -7,7 +7,9 @@ indent() {
 echo "-----> Found artisan"
 
 php artisan webpal:extract-vue-components
+php artisan webpal:compile
 php artisan view:cache
 
 rm -f storage/log/laravel.log
+
 
