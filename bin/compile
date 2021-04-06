@@ -1,8 +1,12 @@
 #!/bin/sh
 
+build_dir=$1
+
 indent() {
   sed -u 's/^/       /'
 }
+
+cd "$build_dir"
 
 echo "-----> Found artisan"
 
