@@ -14,8 +14,8 @@ php artisan webpal:extract-vue-components
 php artisan webpal:compile
 php artisan view:cache
 
-sed -i 's=\\/tmp\\/build[^/]*/storage=storage=g' storage/webpal/generated/views.en.json
-sed -i 's=\\/tmp\\/build[^/]*/storage=storage=g' storage/webpal/generated/views.fr.json
+sed -i 's=\\/tmp\\/build[^/]*/storage==g' storage/webpal/generated/views.en.json
+sed -i 's=\\/tmp\\/build[^/]*/storage==g' storage/webpal/generated/views.fr.json
 
 rm -f storage/log/laravel.log
 
